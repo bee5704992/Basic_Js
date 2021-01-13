@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function draw(n) {
+            let answer = "";
+            let num = n * n;
+            for (row = 0; row < n; row++) {
+                for (column = 0; column < n; column++) {
+                    answer = answer + num.toString();
+                    num = num - 1;
+                }
+                answer = answer + "\n";
+            }
+            console.log(answer);
+        }
+    </script>
+</body>
+
+</html>

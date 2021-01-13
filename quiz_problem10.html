@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [];
+        let num;
+
+        while (num != 'stop') {
+            num = prompt('ใส่ตัวเลข หยุดพิมพ์: stop');
+            arr.push(num);
+        }
+
+        let sort = arr.sort((a, b) => a > b ? 1 : -1);
+        let answer = sort.splice(0, 1);
+
+        alert(`ตัวเลขที่น้อยที่สุดคือ : ${answer}`);
+    </script>
+</body>
+
+</html>

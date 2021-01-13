@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function draw(n) {
+            let answer = "";
+            let line = (n * 2) - 1;
+            let n2 = n;
+            let row2 = n;
+            for (row = 1; row <= line; row++) {
+                if (row <= n) {
+                    for (i = 1; i <= n; i++) {
+                        if (i > row) {
+                            answer = answer + "-";
+                        }
+                        else {
+                            answer = answer + `${row}`;
+                        }
+                    }
+                }
+                else {
+                    row2 = row2 - 1;
+                    n2 = n2 - 1;
+                    for (ii = 1; ii <= n; ii++) {
+
+                        if (ii > n2) {
+                            answer = answer + "-";
+                        }
+                        else {
+                            answer = answer + `${row2}`;
+                        }
+
+                    }
+
+                }
+                answer = answer + "\n";
+            }
+            console.log(answer);
+        }
+    </script>
+</body>
+
+</html>
